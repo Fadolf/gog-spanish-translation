@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "g2o translation",
+  "description": "This extension will translate GOG into Spanish",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["http://www.gog.com/*", "https://www.gog.com/*"],
+      "js": ["translate.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+   "default_icon": "g2o_icon.png",
+   "default_title": "Translate GOG"
+  }
+}
