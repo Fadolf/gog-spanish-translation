@@ -2,7 +2,7 @@ function replaceDivText(selector, english, spanish)
 {
   var element = document.querySelector(selector);
 
-  console.log(selector);
+  //console.log(selector);
 
   if(element == null) 
     return;
@@ -27,20 +27,23 @@ function ready(fn) {
 function spotTranslation()
 {
   var spots = document.querySelectorAll('div.big-spot__text--left');
-  console.log('SPOTS LENGTH ' + spots.length);
-  if(spots.length == 0){
+  /*if(spots.length == 0 ){
     console.log("==========================NECESITO MÁS TIEMPO");
     setTimeout(spotTranslation, 100);
-  }
-
+  }*/
   Array.prototype.forEach.call(spots, function(s){
     console.log(s);
     s.innerHTML = s.innerHTML.replace('Now Available', 'YA DISPONIBLE');
   });
 }
 
+function handleChanges()
+{
+  console.log("****************************Hay cambios");
+}
 
-function translate(){
+
+function callback(){
 
   spotTranslation();
 
@@ -49,7 +52,14 @@ function translate(){
     replaceDivText(translations[i].sel, translations[i].eng, translations[i].spa);
   }
 
+  //CSS Fixes
   
+  document.querySelector('a[ng-click="openRegistration()"]').style.fontSize = '0.8em';
+  document.querySelector('a[ng-click="openLogin()"]').style.fontSize = '0.8em';
+
+  //Observe changes in header
+  //TO-DO
+  //https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
 }
 
 var translations = [
@@ -80,13 +90,7 @@ var translations = [
     'spa': 'Soporte'
   },
   {
-    'sel': 'a._dropdown__toggle[href="https://www.gog.com/account"]',
-    'eng': 'Account',
-    'spa': 'Perfil'
-  },
-  //HTTPS ONCE LOGGED-IN
-  {
-    'sel': 'a._dropdown__toggle[href="/account"]',
+    'sel': 'a._dropdown__toggle[href$="/account"]',
     'eng': 'Account',
     'spa': 'Perfil'
   },
@@ -136,10 +140,46 @@ var translations = [
     'spa': 'Juegos para LINUX'
   },
   {
-    'sel': 'a[class="top-nav__dd-item _dropdown__item"][href="/account"]',
+    'sel': 'a.top-nav__dd-item[href$="/account"]',
     'eng': 'Library',
     'spa': 'Biblioteca'
   },
+  {
+    'sel': 'a.top-nav__dd-item[href$="/account/wishlist"]',
+    'eng': 'Wishlist',
+    'spa': 'Lista de deseos'
+  },
+  {
+    'sel': 'a.top-nav__dd-item[href$="/account/friends"]',
+    'eng': 'Friends',
+    'spa': 'Amigos'
+  },
+  {
+    'sel': 'a.top-nav__dd-item[href$="/myrecentposts"]',
+    'eng': 'Forum Replies',
+    'spa': 'Respuestas en el foro'
+  },
+  {
+    'sel': 'a[href$="/account/settings/orders"]',
+    'eng': '#REWRITE#', //Orders & Settings',
+    'spa': 'Pedidos y Opciones'
+  },
+  {
+    'sel': 'a.top-nav__dd-item[ng-click="logout()"]',
+    'eng': 'Logout',
+    'spa': 'Desconectar'
+  },
+  {
+    'sel': 'a[ng-click="openRegistration()"]',
+    'eng': 'Sign up',
+    'spa': 'Registro'
+  },
+  {
+    'sel': 'a[ng-click="openLogin()"]',
+    'eng': 'Log in',
+    'spa': 'Entrar'
+  },
+  //TO-DO LOGIN FORM => IFRAME 
   //BANNER
   {
     'sel': 'div.galaxy-banner__section--text',
@@ -158,16 +198,84 @@ var translations = [
     'eng': 'LATEST DEALS',
     'spa': 'ÚLTIMAS OFERTAS'
   },
+  //MODULE HEADERS
+  {
+    'sel': 'div.column--left > div.module-header',
+    'eng': "#REWRITE#",
+    'spa': 'GOG.COM: TODO LO BUENO EN VIDEOJUEGOS'
+  },
+  {
+    'sel': 'span[ng-click="selectTab(\'new\')"]',
+    'eng': 'New',
+    'spa': 'Nuevo'
+  },
+  { 
+    'sel': 'span[ng-click="selectTab(\'coming\')"]',
+    'eng': 'Upcoming',
+    'spa': 'Próximamente'
+  },
+  { 
+    'sel': 'span[ng-click="selectTab(\'on_sale\')"]',
+    'eng': 'ON SALE',
+    'spa': 'EN REBAJAS'
+  },
   //GOG PRINCIPLES
   {
-    'sel': 'div[gog-accordion-section="about-gog-drm-free"]',
+    'sel': 'i.icon-drm-free + strong',
+    'eng': 'DRM-Free Content',
+    'spa': 'Contenido libre de DRM'
+  },
+  {
+    'sel': 'i.icon-drm-free ~ div.about-gog__line',
+    'eng': 'You buy it - it’s yours',
+    'spa': 'Lo compras - es tuyo'
+  },
+  {
+    'sel': 'i.icon-fair-price + strong',
+    'eng': 'Fair Price Package',
+    'spa': 'Precios justos'
+  },
+  {
+    'sel': 'i.icon-fair-price ~ div.about-gog__line',
+    'eng': 'Because $1 is not €1',
+    'spa': 'Porque 1$ no es 1€'
+  },
+  {
+    'sel': 'i.icon-shield + strong',
+    'eng': 'Money-back guarantee',
+    'spa': 'Devolución de dinero garantizada'
+  },
+  {
+    'sel': 'i.icon-shield ~ div.about-gog__line',
+    'eng': 'It works, we guarantee it',
+    'spa': 'Funciona, te lo garantizamos'
+  },
+  {
+    'sel': '.about-gog__desc.about-gog__desc--content',
     'eng': '#REWRITE#',
-    'spa': '<i class="about-gog__icon about-gog__icon--lock ic icon-drm-free"></i>' +
-            '<strong class="about-gog__rule">Contenido libre de DRM</strong>' +
-            '<div class="about-gog__line">Lo compras - es tuyo</div>'
+    'spa': '<p>Libre de contenido significa ausencia de protecciones de copia, comprobaciones online ' +
+            'u otras molestias. Todo se centra en ti y tus juegos y películas. Deberías sentir que ' +
+            'los productos que compras son tuyos, como si se tratase de un libro o un DVD. </p>' +
+            '<p><strong>En GOG.com, no importa si estás conectado o desconectado, siempre podrás ' +
+            'utilizar tus compras.</strong></p>'
+  },
+  {
+    'sel': '.about-gog__desc.about-gog__desc--fpp',
+    'eng': '#REWRITE#',
+    'spa': '<p>Todo el mundo debería ser tratado justamente y no pagar más por las compras simplemente ' +
+           'por residir en otra parte distinta del mundo.</p><p><strong>Si un producto en GOG.com cuesta ' +
+           'más en tu país que el precio indicado en EEUU, costearemos la diferencia desde nuestros propios ' +
+           'bolsillos y te la ofreceremos como crédito que podrás usar en la tienda en futuras compras.</strong></p>'
+  },
+  {
+    'sel': '.about-gog__desc.about-gog__desc--guarantee',
+    'eng': '#REWRITE#',
+    'spa': '<p>Cuando compras algo y no funciona, deberías tener la seguridad de que lo puedes devolver.</p>'+
+            '<p><strong>No entendemos por qué los juegos o las películas deberían ser diferentes, así que si ' +
+            'una de tus compras no funciona y no te podemos ayudar a solucionarlo, te devolvemos el dinero.</strong></p>' +
+            '<p>Nuestra garantía de devolución te protege durante 30 días</p>'
   }
 ];
 
 
-
-ready(translate);
+ready(callback);

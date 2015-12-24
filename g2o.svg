@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="343.10839"
-     inkscape:cy="531.24775"
+     inkscape:zoom="5.6"
+     inkscape:cx="345.54433"
+     inkscape:cy="519.65061"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -59,14 +59,18 @@
        height="74"
        x="284.73212"
        y="489.70148"
-       rx="10.918324" />
+       rx="10.918324"
+       inkscape:export-xdpi="23.110001"
+       inkscape:export-ydpi="23.110001" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:69.12606812px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="300.57745"
        y="536.37787"
        id="text4151"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="23.110001"
+       inkscape:export-ydpi="23.110001"><tspan
          sodipodi:role="line"
          id="tspan4153"
          x="300.57745"
@@ -82,7 +86,9 @@
        x="339.78229"
        y="501.55573"
        id="text4155"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="23.110001"
+       inkscape:export-ydpi="23.110001"><tspan
          sodipodi:role="line"
          id="tspan4157"
          x="339.78229"
@@ -94,7 +100,9 @@
        x="306.56354"
        y="531.63129"
        id="text4163"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="23.110001"
+       inkscape:export-ydpi="23.110001"><tspan
          sodipodi:role="line"
          id="tspan4165"
          x="306.56354"
