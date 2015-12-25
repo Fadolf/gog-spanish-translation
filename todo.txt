@@ -1,0 +1,4 @@
+TO-DO
+- Add observer to header menu 'Account' (it is not translated when the user's recently logged in)
+- In GOG principles, when clicking to expand, some of them get reverted to English
+- In games lists, when clicking MORE 'xxxxx', the new content is not translated

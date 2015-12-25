@@ -24,6 +24,52 @@ function ready(fn) {
   }
 }
 
+function findInArray(something, tarray)
+{
+  for (var i = 0; i < tarray.length; i++) {
+    if(tarray[i].eng === something)
+      return tarray[i];
+  };
+}
+
+
+
+function genreTranslation()
+{
+  var categories = [
+    {
+      'eng': 'Role-playing',
+      'spa': 'Juegos de rol'
+    },
+    {
+      'eng': 'Adventure',
+      'spa': 'Aventura'
+    },
+    {
+      'eng': 'Strategy',
+      'spa': 'Estrategia'
+    },
+    {
+      'eng': 'Action',
+      'spa': 'Acción'
+    },
+    {
+      'eng': 'Shooter',
+      'spa': 'Juego de disparos'
+    },
+  ];
+
+  var spans = document.querySelectorAll('span[ng-if="::product.category"]');
+  Array.prototype.forEach.call(spans,function(s){
+    var text = s.innerHTML,
+      trans = findInArray(text, categories).spa;
+
+    s.innerHTML = trans; 
+
+  });
+}
+
+
 function spotTranslation()
 {
   var spots = document.querySelectorAll('div.big-spot__text--left');
@@ -46,6 +92,7 @@ function handleChanges()
 function callback(){
 
   spotTranslation();
+  genreTranslation();
 
   for(i=0;i<translations.length;i++)
   {
@@ -219,6 +266,11 @@ var translations = [
     'eng': 'ON SALE',
     'spa': 'EN REBAJAS'
   },
+  { 
+    'sel': 'div.about-gog ~ div.module-header',
+    'eng': 'HEADLINES',
+    'spa': 'TITULARES'
+  },
   //GOG PRINCIPLES
   {
     'sel': 'i.icon-drm-free + strong',
@@ -274,7 +326,33 @@ var translations = [
             '<p><strong>No entendemos por qué los juegos o las películas deberían ser diferentes, así que si ' +
             'una de tus compras no funciona y no te podemos ayudar a solucionarlo, te devolvemos el dinero.</strong></p>' +
             '<p>Nuestra garantía de devolución te protege durante 30 días</p>'
-  }
+  },
+  //FOOTER
+  {
+    'sel': 'a.main-ul__link[href="/redeem"]',
+    'eng': 'Redeem code',
+    'spa': 'Canjear un código'
+  },
+  {
+    'sel': 'a.main-ul__link[href="/reclaim"]',
+    'eng': 'Reclaim your game',
+    'spa': 'Reclama tu juego'
+  },
+  {
+    'sel': 'a.main-ul__link[href="/support/contact"]',
+    'eng': 'Contact us',
+    'spa': 'Contáctanos'
+  },
+  {
+    'sel': 'a.main-ul__link[href="/work"]',
+    'eng': 'career opportunities',
+    'spa': 'Ofertas de trabajo'
+  },
+  {
+    'sel': 'a.main-ul__link[href="/indie"]',
+    'eng': 'Submit your game',
+    'spa': 'Envía tu juego'
+  },
 ];
 
 
