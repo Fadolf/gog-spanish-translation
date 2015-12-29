@@ -55,14 +55,25 @@ function genreTranslation()
     },
     {
       'eng': 'Shooter',
-      'spa': 'Juego de disparos'
+      'spa': 'Juegos de disparos'
     },
+    {
+      'eng': 'Simulation',
+      'spa': 'Simulación'
+    }
   ];
 
   var spans = document.querySelectorAll('span[ng-if="::product.category"]');
   Array.prototype.forEach.call(spans,function(s){
+
+    console.log(s.innerHTML);
     var text = s.innerHTML,
-      trans = findInArray(text, categories).spa;
+      trans = findInArray(text, categories);
+
+    if(!trans || trans === undefined)
+      return;
+    else
+      trans = trans.spa;
 
     s.innerHTML = trans; 
 
