@@ -32,6 +32,41 @@ function findInArray(something, tarray)
   };
 }
 
+function languageControl()
+{
+  var languages = [
+    {
+      'eng': 'English',
+      'spa': 'Inglés'
+    },
+    {
+      'eng': 'Deutsch',
+      'spa': 'Alemán'
+    },
+    {
+      'eng': 'Français',
+      'spa': 'Francés'
+    },
+    {
+      'eng': 'Pусский',
+      'spa': 'Ruso'
+    }
+  ];
+
+  var divs = document.querySelectorAll('div[ng-bind="language.name"]');
+
+  Array.prototype.forEach.call(divs, function(d) {
+    var text = d.innerHTML,
+      trans = findInArray(text, languages);
+
+    if(!trans || trans === undefined)
+      return;
+    else
+      trans = trans.spa;
+
+    d.innerHTML = trans; 
+  });
+}
 
 
 function genreTranslation()
@@ -104,6 +139,7 @@ function callback(){
 
   spotTranslation();
   genreTranslation();
+  languageControl();
 
   for(i=0;i<translations.length;i++)
   {
@@ -364,6 +400,146 @@ var translations = [
     'eng': 'Submit your game',
     'spa': 'Envía tu juego'
   },
+  {
+    'sel': 'div.__right__currency > span.__right__span',
+    'eng': 'Currency:',
+    'spa': 'Moneda'
+  },
+  {
+    'sel': 'div.__right__lang > span.__right__span',
+    'eng': 'Language:',
+    'spa': 'Idioma:'
+  },
+  {
+    'sel': 'a[href="/games##sort=bestselling&price=discounted&page=1"]',
+    'eng': 'Games',
+    'spa': 'Juegos'
+  },
+  {
+    'sel': 'ul a[href="/games##sort=bestselling&price=discounted&page=1"]',
+    'eng': 'ON SALE',
+    'spa': 'EN OFERTA'
+  },
+  {
+    'sel': 'ul a[href="/games##sort=bestselling&page=1"]',
+    'eng': 'BESTSELLERS',
+    'spa': 'LOS MÁS VENDIDOS'
+  },
+  {
+    'sel': 'ul a[href="/games##sort=date&page=1"]',
+    'eng': 'Newest releases',
+    'spa': 'Nuevos lanzamientos'
+  },
+  {
+    'sel': 'ul a[href="/games##sort=rating&page=1"]',
+    'eng': 'Top rated',
+    'spa': 'Mejor valorados'
+  },
+  {
+    'sel': 'a[href="/movies##sort=bestselling&price=discounted&page=1"]',
+    'eng': 'Movies',
+    'spa': 'Películas'
+  },
+  {
+    'sel': 'a[href="/movies##sort=bestselling&price=discounted&page=1"]',
+    'eng': 'Movies',
+    'spa': 'Películas'
+  },
+  {
+    'sel': 'ul a[href="/movies##sort=bestselling&price=discounted&page=1"]',
+    'eng': 'ON SALE',
+    'spa': 'EN OFERTA'
+  },
+  {
+    'sel': 'ul a[href="/movies##sort=bestselling&page=1"]',
+    'eng': 'BESTSELLERS',
+    'spa': 'LOS MÁS VENDIDOS'
+  },
+  {
+    'sel': 'ul a[href="/movies##sort=date&page=1"]',
+    'eng': 'Newest releases',
+    'spa': 'Nuevos lanzamientos'
+  },
+  {
+    'sel': 'ul a[href="/movies##sort=rating&page=1"]',
+    'eng': 'Top rated',
+    'spa': 'Mejor valoradas'
+  },
+  {
+    'sel': 'ul a[href="mailto:welovemovies@gog.com"]',
+    'eng': 'Submit your movie',
+    'spa': 'Envía tu película'
+  },
+  {
+    'sel': 'a.main-footer__sitemap-link[href="/support"]',
+    'eng': 'Support',
+    'spa': 'Soporte'
+  },  
+  {
+    'sel': 'ul a.sitemap-item[href="/support/website_help"]',
+    'eng': 'Website FAQ',
+    'spa': 'Preguntas frecuentes'
+  },
+  {
+    'sel': 'ul a.sitemap-item[href="/support"]',
+    'eng': 'Games support',
+    'spa': 'Soporte de juegos'
+  },
+  {
+    'sel': 'ul a.sitemap-item[href="/support/policies"]',
+    'eng': 'Policies',
+    'spa': 'Nuestras políticas'
+  },
+  {
+    'sel': 'ul a.sitemap-item[href="/support/contact"]',
+    'eng': 'Contact us',
+    'spa': 'Contáctanos'
+  },
+  {
+    'sel': 'a.main-footer__sitemap-link[href$="/account"]',
+    'eng': 'My Account',
+    'spa': 'Mi perfil'
+  },
+  {
+    'sel': 'ul a.sitemap-item[href$="/account"]',
+    'eng': 'My library',
+    'spa': 'Mi biblioteca'
+  },
+  {
+    'sel': 'ul a.sitemap-item[href$="/settings/orders"]',
+    'eng': '#REWRITE#', // 'Orders & Settings',
+    'spa': 'Pedidos y opciones'
+  },
+  {
+    'sel': 'a.main-footer__sitemap-link[href="/forum"]',
+    'eng': 'Community', 
+    'spa': 'Comunidad'
+  },
+  {
+    'sel': 'ul a.sitemap-item[href="/forum"]',
+    'eng': 'Forums', 
+    'spa': 'Foros'
+  },
+  {
+    'sel': 'ul a.sitemap-item[href="/wishlist"]',
+    'eng': 'Community wishlist', 
+    'spa': 'Lista de deseos de la comunidad'
+  },
+  {
+    'sel': 'a.datk-footer-link[href="/thanks"]',
+    'eng': 'Our thanks', 
+    'spa': 'Agradecimientos'
+  },
+  {
+    'sel': 'div.dark-footer__copyrights',
+    'eng': 'Part of', 
+    'spa': 'Parte del grupo'
+  },
+  {
+    'sel': 'div.dark-footer__copyrights',
+    'eng': 'group', 
+    'spa': ''
+  }
 ];
 
 
