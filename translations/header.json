@@ -1,0 +1,117 @@
+[
+  {
+    "sel": "div[gog-dropdown-toggle]",
+    "eng": "Search",
+    "spa": "Buscar"
+  },
+  {
+    "sel": "a._dropdown__toggle[href='/games']",
+    "eng": "Games",
+    "spa": "Juegos"
+  },
+  {
+    "sel": "a.top-nav__item[href='/movies']",
+    "eng": "Movies",
+    "spa": "Películas"
+  },
+  {
+    "sel": "a.top-nav__item[href='/forum']",
+    "eng": "Community",
+    "spa": "Comunidad"
+  },
+  {
+    "sel": "a.top-nav__item[href='/support']",
+    "eng": "Support",
+    "spa": "Soporte"
+  },
+  {
+    "sel": "a._dropdown__toggle[href$='/account']",
+    "eng": "Account",
+    "spa": "Perfil"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/action']",
+    "eng": "Action",
+    "spa": "Acción"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/adventure']",
+    "eng": "Adventure",
+    "spa": "Aventura"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/sports']",
+    "eng": "Sports",
+    "spa": "Deportes"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/role-playing']",
+    "eng": "Role-playing",
+    "spa": "Juegos de Rol"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/shooter']",
+    "eng": "Shooter",
+    "spa": "Juegos de disparos"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/simulation']",
+    "eng": "Simulation",
+    "spa": "Simulación"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/strategy']",
+    "eng": "Strategy",
+    "spa": "Estrategia"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/mac']",
+    "eng": "MAC GAMES",
+    "spa": "Juegos para MAC"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href='/games/linux']",
+    "eng": "LINUX GAMES",
+    "spa": "Juegos para LINUX"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href$='/account']",
+    "eng": "Library",
+    "spa": "Biblioteca"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href$='/account/wishlist']",
+    "eng": "Wishlist",
+    "spa": "Lista de deseos"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href$='/account/friends']",
+    "eng": "Friends",
+    "spa": "Amigos"
+  },
+  {
+    "sel": "a.top-nav__dd-item[href$='/myrecentposts']",
+    "eng": "Forum Replies",
+    "spa": "Respuestas en el foro"
+  },
+  {
+    "sel": "a[href$='/account/settings/orders']",
+    "eng": "#REWRITE#", //Orders & Settings",
+    "spa": "Pedidos y Opciones"
+  },
+  {
+    "sel": "a.top-nav__dd-item[ng-click='logout()']",
+    "eng": "Logout",
+    "spa": "Desconectar"
+  },
+  {
+    "sel": "a[ng-click='openRegistration()']",
+    "eng": "Sign up",
+    "spa": "Registro"
+  },
+  {
+    "sel": "a[ng-click='openLogin()']",
+    "eng": "Log in",
+    "spa": "Entrar"
+  }
+]

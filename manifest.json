@@ -11,7 +11,10 @@
     }
   ],
   "browser_action": {
-   "default_icon": "g2o_icon.png",
-   "default_title": "Translate GOG"
-  }
+    "default_icon": "g2o_icon.png",
+    "default_title": "Translate GOG"
+  },
+  "web_accessible_resources": [
+    "translations/*"
+  ]
 }
