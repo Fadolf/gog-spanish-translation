@@ -96,7 +96,7 @@
   },
   {
     "sel": "a[href$='/account/settings/orders']",
-    "eng": "#REWRITE#", //Orders & Settings",
+    "eng": "#REWRITE#",
     "spa": "Pedidos y Opciones"
   },
   {

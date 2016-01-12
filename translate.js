@@ -1,3 +1,15 @@
+var dependencies = [
+  {
+    route: '/',
+    dependencies: ['header', 'footer', 'genres', 'main']
+  },
+  {
+    route: '/support',
+    dependencies: ['header', 'footer', 'genres', 'support']
+  }
+];
+
+
 function replaceText(selector, english, spanish)
 {
   var element = document.querySelector(selector);
@@ -152,8 +164,6 @@ function applyTranslation(e)
       Array.prototype.forEach.call(translations, function(t){
         replaceText(t.sel, t.eng, t.spa);
       });
-
-
     }
   }
 
@@ -179,7 +189,33 @@ function callback(){
   //https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
 }
 
+function getDependencies(route)
+{
+  for(var i=0;i<dependencies.length;i++)
+  {
+    if(dependencies[i].route === route)
+      return dependencies[i].dependencies;
+  }
+}
 
-ready(callback);
+
+ready(router);
 
 console.log(window.location);
+
+
+
+
+function router()
+{
+  route = window.location.pathname;
+
+  var ds = getDependencies(route);
+
+  console.log(ds);
+
+  Array.prototype.forEach.call(ds, function(d){
+    requestTranslations(d + '.json', applyTranslation);
+  });
+
+}
