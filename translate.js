@@ -130,7 +130,7 @@ function genreTranslation()
 
 function spotTranslation()
 {
-  var spots = document.querySelectorAll('div.big-spot__text--left');
+  var spots = document.querySelectorAll('.big-spot__title > strong');
   /*if(spots.length == 0 ){
     console.log("==========================NECESITO MÁS TIEMPO");
     setTimeout(spotTranslation, 100);
@@ -217,5 +217,9 @@ function router()
   Array.prototype.forEach.call(ds, function(d){
     requestTranslations(d + '.json', applyTranslation);
   });
+
+  spotTranslation();
+  genreTranslation();
+  languageControl();
 
 }

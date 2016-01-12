@@ -83,5 +83,15 @@
     "sel": ".about-gog__desc.about-gog__desc--guarantee",
     "eng": "#REWRITE#",
     "spa": "<p>Cuando compras algo y no funciona, deberías tener la seguridad de que lo puedes devolver.</p> <p><strong>No entendemos por qué los juegos o las películas deberían ser diferentes, así que si una de tus compras no funciona y no te podemos ayudar a solucionarlo, te devolvemos el dinero.</strong></p> <p>Nuestra garantía de devolución te protege durante 30 días</p>"
+  },
+  {
+    "sel": "span[ng-click=\"showMore()\"]",
+    "eng": "MORE NEWS",
+    "spa": "MÁS NOTICIAS"
+  },
+  {
+    "sel": "span[ng-hide=\"list.isLoading\"]",
+    "eng": "More popular",
+    "spa": "Más juegos populares"
   }
 ]
