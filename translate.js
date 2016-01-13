@@ -203,23 +203,28 @@ ready(router);
 
 console.log(window.location);
 
-
-
-
 function router()
 {
+
   route = window.location.pathname;
+
+  if(route === '/'){
+    spotTranslation();
+    genreTranslation();
+  }
+
+  languageControl();
 
   var ds = getDependencies(route);
 
-  console.log(ds);
+  if(ds === undefined)
+  {
+    return;
+  }
 
   Array.prototype.forEach.call(ds, function(d){
     requestTranslations(d + '.json', applyTranslation);
   });
 
-  spotTranslation();
-  genreTranslation();
-  languageControl();
 
 }
