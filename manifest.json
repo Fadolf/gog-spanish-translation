@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["http://www.gog.com/*", "https://www.gog.com/*"],
-      "js": ["translate.js"],
+      "js": ["helper.js", "translate.js"],
       "run_at": "document_end"
     }
   ],
