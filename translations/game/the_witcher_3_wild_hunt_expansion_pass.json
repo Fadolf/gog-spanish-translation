@@ -1,0 +1,20 @@
+[
+  {
+    "sel": "h1.header__title[itemprop=\"name\"]",
+    "eng": "#REWRITE#",
+    "spa": "PASE DE TEMPORADA PARA THE WITCHER 3: WILD HUNT"
+  },
+  {
+    "sel": "div.description__text[ng-hide=\"showAll\"]",
+    "eng": "#REWRITE#",
+    "spa": "<b>Resumen: </b>El Pase de Temporada te asegura acceder a dos aventuras épicas en el vibrante mundo del cazador de monstruos Geral de Rivia.<div class=\"br\"></div><b>Hearts of Stone (¡Ya disponible!)</b> hara qué     Geralt se dirija a una aventura totalmente nueva, de 10 horas de duración, en los páramos salvajes de la Tierra de Nadie y en los rincones y callejones de Oxenfurt, donde intentará completar una misión del misterioso Hombre de Cristal. </div>"
+  },
+  {
+    "sel": "a.un--alpha.description__more[ng-click=\"showAll = true\"]",
+    "eng": "Read more",
+    "spa": "Leer más"
+  }
+
+
+
+]

@@ -1,5 +1,7 @@
 (function(){
   var helper = new Helper();
+  console.log("Helper "+ helper);
+  console.log(helper);
 
   function ready(fn) {
     if (document.readyState != 'loading'){
@@ -15,22 +17,38 @@
     startBlockTranslations();
   }
 
+  function isResource(route)
+  {
+    var blocks = route.split('/'),
+      first = blocks[1];
+
+    switch(first){
+      case 'game':
+      case 'movie':
+      case 'support':
+        return true;
+      default:
+        return false;
+    }
+  }
+
   function startBlockTranslations()
   {
     var pathname = window.location.pathname,
     blocks = pathname.split('/');
-
-    for(var i=0;i < blocks.length;i++)
+    //Find out general dependencies 
+    if(blocks[1] === '')
+      helper.resolveDependencies('/');
+    else
+      helper.resolveDependencies(blocks[1]);
+    
+    var resource = isResource(pathname);
+    if(resource)
     {
-      var deps = helper.findOutDependencies(blocks[i]);
-      for(var j=0; j < deps.length; j++)
-      {
-        helper.requestTranslation(dep[j]);
-      }
-    }
-  }
-
-  
+      console.log("REQUESTING RESOURCE " + pathname);
+      helper.requestTranslation(pathname.replace('/',''));
+    }    
+  } 
 
   ready(documentIsReady);
 

@@ -1,0 +1,24 @@
+[
+  {
+    "block": "/",
+    "dependencies": ["main"]
+  },
+  {
+    "block": "/games" ,
+    "dependencies": ["games.json"]
+  },
+  {
+    "block": "/game",
+    "dependencies": ["game.json"]
+  },
+  {
+    "block": "/movies" ,
+    "dependencies": ["movies.json"]
+  },
+  {
+    "block": "/game",
+    "dependencies": ["movie.json"]
+  }
+
+
+]

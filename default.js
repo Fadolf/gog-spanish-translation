@@ -35,20 +35,14 @@ Helper.prototype.getDependencies = function(){
 Helper.prototype.resolveDependencies = function(block){
   var self = this;
 
-
-  Array.prototype.forEach.call(self.deps, function(d){
+  Array.prototype.forEach.call(this.deps, function(d){
     if(d.block === block){
-      for(var i=0;i<d.dependencies.length;i++)
+      for(var i=0;i<d.dependencies;i++)
       {
         self.requestTranslation(d.dependencies[i]);
       }
     }
-  });
-
-  Array.prototype.forEach.call(self.defaultDependencies, function(dd){
-    self.requestTranslation(dd);
-  });
-
+  });    
 }
 
 Helper.prototype.requestTranslation = function (file){
@@ -65,7 +59,7 @@ Helper.prototype.applyTranslation = function (e){
       var translations = JSON.parse(this.responseText);
       //console.log(translations);
       Array.prototype.forEach.call(translations, function(t){
-        replaceText(t);
+        replaceText(t.sel, t.eng, t.spa);
       });
     }
   }
@@ -73,16 +67,18 @@ Helper.prototype.applyTranslation = function (e){
 
 function replaceText(translation)
 {
-  var element = document.querySelector(translation.sel);
+  var element = document.querySelector(translation.selector);
 
   if(element == null) 
     return;
 
-  if(translation.eng === '#REWRITE#'){
-    element.innerHTML= translation.spa;
+  if(english === '#REWRITE#'){
+    element.innerHTML= translation.spanish;
   }
   else{
-    element.innerHTML= element.innerHTML.replace(translation.eng, 
-      translation.spa);
+    element.innerHTML= element.innerHTML.replace(translation.english, 
+      translation.spanish);
   }
 }
+
+console.log("DEFAULT JS");
