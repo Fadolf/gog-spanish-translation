@@ -1,0 +1,21 @@
+[
+	{
+    "sel": "h1.header__title[itemprop=\"name\"]",
+    "eng": "#REWRITE#",
+    "spa": "THE WITCHER 3: WILD HUNT"
+  },
+  {
+    "sel": "div.description__text[ng-hide=\"showAll\"]",
+    "eng": "#REWRITE#",
+    "spa": "<b>Resumen: </b>Un juego de rol de nueva generación que combina una historia madura, no lineal, con un mundo abierto de gran tamaño. <div class=\"br\"></div> The Witcher 3: Wild Hunt, un RPG épico con una historia madura y no lineal, que reacciona a tus decisiones, en un mundo abierto enorme y lleno de vida, sumado a un combate táctico y dinámico, que acompaña a un apartado técnico exuberante. Ya está disponible en GOG. vibrante mundo del cazador de monstruos Geral de Rivia."
+  },
+  {
+    "sel": "a.un--alpha.description__more[ng-click=\"showAll = true\"]",
+    "eng": "Read more",
+    "spa": "Leer más"
+  }
+
+
+
+
+]
