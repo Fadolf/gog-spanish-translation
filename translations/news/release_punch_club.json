@@ -1,0 +1,17 @@
+[
+  {
+    "sel": "h1.article__title.l-section--primary",
+    "eng": "Release",
+    "spa": "Lanzamiento"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "#REWRITE#",
+    "spa": "<b>El ojo negro del tigre</b>. <div class=\"br\"></div><div class=\"br\"></div><div class=\"br\"></div><div class=\"br\"></div>Ya está disponible sin DRM en GOG.com <a href=\"http://www.gog.com/game/punch_club\"><b>Punch Club</b></a>, un administrador de lucha sólido como una roca, para Windows, Mac y Linux. <div class=\"br\"></div><div class=\"br\"></div>La ciencia ha probado irrefutablemente que presenciar el asesinato de tu padre en un callejón oscuro tiene un 68.3% de probabilidades de transformarte en un justiciero de la calle de puño vivo. Pero para cumplir este noble destino, uno debe entrenar duro, centrarse en consumir hidratos de carbono, y que te sienten bien los pantalones cortos.<div class=\"br\"></div><div class=\"br\"></div>Ve al gimnasio, come pechuga de pollo al vapor y pega a cualquiera que te mire mal desde el otro lado del cuadrilátero. Acostúmbrate a ser noqueado pero tampoco te acomodes. Asegúrate de usar tu cabezón no solo para neutralizar la izquierda de tu oponente sino también para tomar las decisiones adecuadas a la hora de personalizar tu estilo de lucha o sobrellevar tu vida social, económica y el día a día. El camino hasta el asesino de tu padre está lleno de cintas de correr, pérdida de algunos dientes, y marabuntas de gente sedienta de sangre. Gestiona y persigue tu salida hasta lanzar un gancho lleno de satisfacción personal.<div class=\"br\"></div><div class=\"br\"></div><div class=\"br\"></div><div class=\"br\"></div>Aprende a pegar siempre fuerte en tu camino a la grandeza y empieza a hablar de <a href=\"http://www.gog.com/game/punch_club\"><b>Punch Club</b></a>, sin DRM en GOG.com" 
+  },
+  {
+    "sel": "a.btn.btn--gray.btn--comments",
+    "eng": "See comments",
+    "spa": "Ver comentarios"
+  }
+]

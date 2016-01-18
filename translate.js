@@ -26,6 +26,7 @@
       case 'game':
       case 'movie':
       case 'support':
+      case 'news':
         return true;
       default:
         return false;
