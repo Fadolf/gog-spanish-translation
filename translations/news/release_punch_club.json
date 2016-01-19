@@ -3,11 +3,51 @@
     "sel": "h1.article__title.l-section--primary",
     "eng": "Release",
     "spa": "Lanzamiento"
+  },  
+  {
+    "sel": "div.article__body",
+    "eng": "The black eye of the tiger",
+    "spa": "El ojo negro del tigre"
   },
   {
     "sel": "div.article__body",
-    "eng": "#REWRITE#",
-    "spa": "<b>El ojo negro del tigre</b>. <div class=\"br\"></div><div class=\"br\"></div><div class=\"br\"></div><div class=\"br\"></div>Ya está disponible sin DRM en GOG.com <a href=\"http://www.gog.com/game/punch_club\"><b>Punch Club</b></a>, un administrador de lucha sólido como una roca, para Windows, Mac y Linux. <div class=\"br\"></div><div class=\"br\"></div>La ciencia ha probado irrefutablemente que presenciar el asesinato de tu padre en un callejón oscuro tiene un 68.3% de probabilidades de transformarte en un justiciero de la calle de puño vivo. Pero para cumplir este noble destino, uno debe entrenar duro, centrarse en consumir hidratos de carbono, y que te sienten bien los pantalones cortos.<div class=\"br\"></div><div class=\"br\"></div>Ve al gimnasio, come pechuga de pollo al vapor y pega a cualquiera que te mire mal desde el otro lado del cuadrilátero. Acostúmbrate a ser noqueado pero tampoco te acomodes. Asegúrate de usar tu cabezón no solo para neutralizar la izquierda de tu oponente sino también para tomar las decisiones adecuadas a la hora de personalizar tu estilo de lucha o sobrellevar tu vida social, económica y el día a día. El camino hasta el asesino de tu padre está lleno de cintas de correr, pérdida de algunos dientes, y marabuntas de gente sedienta de sangre. Gestiona y persigue tu salida hasta lanzar un gancho lleno de satisfacción personal.<div class=\"br\"></div><div class=\"br\"></div><div class=\"br\"></div><div class=\"br\"></div>Aprende a pegar siempre fuerte en tu camino a la grandeza y empieza a hablar de <a href=\"http://www.gog.com/game/punch_club\"><b>Punch Club</b></a>, sin DRM en GOG.com" 
+    "eng": "<a href=\"http://www.gog.com/game/punch_club\"><b>Punch Club</b></a>, a rocky-solid fighting manager, is available now DRM-free on GOG.com for Windows, Mac and Linux.",
+    "spa": "Ya está disponible sin DRM en GOG.com <a href=\"http://www.gog.com/game/punch_club\"><b>Punch Club</b></a>, un administrador de lucha sólido como una roca, para Windows, Mac y Linux."
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "Science has irrefutably proven that witnessing your dad's murder in a dark alley yields a 68.3% chance of transforming you into a fist-swinging bringer of street justice",
+    "spa": "La ciencia ha probado irrefutablemente que presenciar el asesinato de tu padre en un callejón oscuro tiene un 68.3% de probabilidades de transformarte en un justiciero de la calle de puño vivo"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "But in order to fulfil this noble destiny one must also train hard, obsess over carbohydrate consumption, and always look good in boxer shorts",
+    "spa": "Pero para cumplir este noble destino, uno debe entrenar duro, centrarse en consumir hidratos de carbono, y que te sienten bien los pantalones cortos"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "Hit the gym, the steamed chicken breasts, and anyone that looks at you the wrong way or from across the ring.",
+    "spa": "Ve al gimnasio, come pechuga de pollo al vapor y pega a cualquiera que te mire mal desde el otro lado del cuadrilátero. "
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "Get used to getting knocked out but never get comfortable with it. Be sure to use your noggin not just to wear out your opponent's mean left but to make the right decisions when customizing your fighting build or juggling your social, financial, and everyday life",
+    "spa": "Acostúmbrate a ser noqueado pero tampoco te acomodes. Asegúrate de usar tu cabezón no solo para neutralizar la izquierda de tu oponente sino también para tomar las decisiones adecuadas a la hora de personalizar tu estilo de lucha o sobrellevar tu vida social, económica y el día a día"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "The path to your father's killer is paved with sweaty treadmills, loose teeth, and blood-thirsty crowds. Micromanage and fight your way through it for that sweet sweet uppercut of personal gratification",
+    "spa": "El camino hasta el asesino de tu padre está lleno de cintas de correr, pérdida de algunos dientes, y marabuntas de gente sedienta de sangre. Gestiona y persigue tu salida hasta lanzar un gancho lleno de satisfacción personal"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "Learn to always punch high on your road to greatness and start taking about the ",
+    "spa": "Aprende a pegar siempre fuerte en tu camino a la grandeza y empieza a hablar de"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "DRM-free on GOG.com.",
+    "spa": "sin DRM en GOG.com"
   },
   {
     "sel": "a.btn.btn--gray.btn--comments",

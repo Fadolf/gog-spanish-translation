@@ -1,0 +1,52 @@
+[
+  {
+    "sel": "h1.article__title.l-section--primary",
+    "eng": "Release",
+    "spa": "Lanzamiento"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "An action-adventure of great depth.",
+    "spa": "Una aventura antigua de gran profundidad"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "the side-scrolling acount of humanity's downfall, is available now DRM-free on GOG.com for Windows, Mac, and Linux, with a 15% launch discount.",
+    "spa": "un juego de de desplazamiento lateral testigo del hundimiento de la humanidad. Ya disponible en GOG.com para Windows, Mac y Linux, con un 15% de descuento por su lanzamiento."
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "It was always going to end in tears. A vast, unending ocean of tears. As you return from your desperate space mission that was humanity's last hope for survival, you find our world in submerged ruins.",
+    "spa": "Desde siempre, parecía claro que iba a acabar en lágrimas. Un vasto e interminable océano de lágrimas. Cuando regresas de una misión espacial desesperada, que además era la última esperanza para la supervivencia humana, lo que encuentras es un mundo sumergido en ruinas."
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "Terrible creatures have reclaimed the oceans, our species' last retreat, and are now the unwitting curators of this eerie underwater \"museum\", which chronicles man's inescapable journey to destruction.",
+    "spa": "Criaturas horribles se han apoderado de los océanos, la última retirada de nuestra especie, y son ahora los conservadores de este misterioso 'museo' submarino, donde se narra el viaje inevitable de la especie humana hacia su destrucción."
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "Acting as a brave historian you must try to figure out what brought about the apocalypse, while navigating the nasty surprises lurking among the ruins. Information is scarce, but the beautiful pixel-art environments are rife with clues on humanity's brief passing from the surface (and subsurface) of the planet. ",
+    "spa": "En el papel de un valiente historiador, debes tratar de averiguar qué es lo que trajo este apocalipsis, a la par que navegas las ruinas encontrando sorpresas asquerosas e inesperadas. La información es escasa, pero en los bellos escenarios modelados con pixel-art abundan pistas sobre la rápida desaparición de la humanidad desde la superficie (y subsuelo) del planeta. "
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "Be observant and thorough in your exploration, but never let your guard down for here there be sea monsters.",
+    "spa": "Debes ser observador y exhaustivo durante tus exploraciones, pero nunca bajes la guardia porque siempre habrá monstruos de mar al acecho."
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "Dive into humanity's past and breathe in",
+    "spa": "Sumérgete en el pasado de la humanidad y vívelo en"
+  },
+  {
+    "sel": "div.article__body",
+    "eng": "DRM-free on GOG.com. The 15% discount will last until January 26, 08:59 AM GMT.",
+    "spa": "sin DRM en GOG.com. El descuento del 15% durará hasta el 26 de enero a las 08:59 AM GMT"
+  },
+  {
+    "sel": "a.btn.btn--gray.btn--comments",
+    "eng": "See comments",
+    "spa": "Ver comentarios"
+  }
+]
